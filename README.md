@@ -20,6 +20,35 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Code Quality and Standards
+
+This project uses a comprehensive linting and formatting setup:
+
+- **ESLint**: For static code analysis and enforcing coding standards
+- **Prettier**: For consistent code formatting
+- **Husky**: For Git hooks that enforce quality before commits
+- **lint-staged**: For running linters on staged files only
+- **commitlint**: For enforcing conventional commit messages
+
+### Available Scripts
+
+- `npm run lint`: Run ESLint to check for code issues
+- `npm run format`: Format all files with Prettier
+
+### Commit Convention
+
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification for commit messages:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Types include: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `chore`, `ci`, `build`, and `revert`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
